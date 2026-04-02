@@ -97,7 +97,8 @@ class imageDetect:
                     points = {
                         "label": names[int(cls)],
                         "points": pointcombined,
-                        "group_id": f"{conf}",
+                        # "group_id": f"{conf}",
+                        "group_id": int(conf * 100),
                         "shape_type": "rectangle",
                         "flags": {},
                     }
